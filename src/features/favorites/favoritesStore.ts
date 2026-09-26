@@ -7,7 +7,9 @@ import type { Product } from '../products/api'
  *
  * Khác với Redux Toolkit: không cần slice / action creator / Provider.
  * Component gọi thẳng `useFavoritesStore(selector)` là có state + action.
+ * 
  */
+
 export interface FavoritesState {
   items: Product[]
   toggleFavorite: (product: Product) => void
